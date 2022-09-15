@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import fetchImages from 'components/ServiceApi/images';
 import Searchbar from 'components/Searchbar/Searchbar';
@@ -11,7 +10,6 @@ import Modal from 'components/Modal/Modal';
 const App = () => {
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(1);
-  const [imagesOnPage, setImagesOnPage] = useState(0);
   const [totalImages, setTotalImages] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
